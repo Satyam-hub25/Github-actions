@@ -1,0 +1,7 @@
+services:
+  api:
+    build: .
+    container_name: github-ci-cd-api
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
